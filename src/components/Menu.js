@@ -4,14 +4,14 @@ import Logo from "../assets/shared/desktop/logo.svg";
 
 const Menu = (props) => {
   return (
-    <section class="top-nav">
-      <label class="menu-button-container" for="menu-toggle">
-        <div class="menu-button"></div>
+    <section className="top-nav">
+      <label className="menu-button-container" htmlFor="menu-toggle">
+        <div className="menu-button"></div>
       </label>
       <img src={Logo} />
       <input id="menu-toggle" type="checkbox" />
 
-      <ul class="menu">
+      <ul className="menu">
         <li>Home</li>
         <li>Headphones</li>
         <li>Speakers</li>

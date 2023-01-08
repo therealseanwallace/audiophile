@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="hero-content-container">
+    <div className="hero">
       <h3>New Product</h3>
       <h2>XX99 Mark II Headphones</h2>
       <p>

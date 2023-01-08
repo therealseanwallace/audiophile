@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/Header";
+import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import ShopProductsLinks from "./components/ShopProductsLinks";
 import FeaturedProductDetailed from "./components/FeaturedProductDetailed";
@@ -10,16 +10,16 @@ import Footer from "./components/Footer";
 const Home = () => {
   return (
     <div className="homepage-container">
-      <div className="header-hero-container">
-        <Header />
+      <header>
+        <Menu />
         <hr />
         <Hero />
-      </div>
+      </header>
       <main>
         <ShopProductsLinks />
         <FeaturedProductDetailed />
-        <FeaturedProductNoDetail productName="ZX7 Speaker"/>
-        <FeaturedProductNoDetail productName="YX1 Earphones"/>
+        <FeaturedProductNoDetail productName="ZX7 Speaker" />
+        <FeaturedProductNoDetail productName="YX1 Earphones" />
         <AudiophileCopySection />
       </main>
       <Footer />
