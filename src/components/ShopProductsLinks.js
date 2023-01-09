@@ -5,7 +5,7 @@ import EarphonePreview from "../assets/earphone-preview.png";
 
 const ShopProductsLinks = () => {
   return (
-    <div className="shop-products-links-container">
+    <section className="shop-products-links">
       <button>
         <img src={HeadphonePreview} className="headphone-preview preview-image"/>
         <h3>Headphones</h3>
@@ -21,7 +21,7 @@ const ShopProductsLinks = () => {
         <h3>Earphones</h3>
         <p>Shop</p>
       </button>
-    </div>
+    </section>
   );
 };
 

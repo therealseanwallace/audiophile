@@ -4,9 +4,10 @@ import BestGear from "../assets/shared/desktop/image-best-gear.jpg";
 const AudiophileCopySection = () => {
   return (
     <section className="audiophile-copy-section-container">
+      <img src={BestGear} alt="A young man listening to headphones."/>
       <div className="copy-section-copy-container">
         <h2>
-          Bringing you the <span>best</span> audio gear.
+          Bringing you the <span>best</span> audio gear
         </h2>
         <p>
           Located at the heart of New York City, Audiophile is the premier store
@@ -17,7 +18,7 @@ const AudiophileCopySection = () => {
           best place to buy your portable audio equipment.
         </p>
       </div>
-      <img src={BestGear} alt="A young man listening to headphones."/>
+      
     </section>
   );
 };

@@ -2,10 +2,9 @@ import React from "react";
 import Menu from "./components/Menu";
 import Hero from "./components/Hero";
 import ShopProductsLinks from "./components/ShopProductsLinks";
-import FeaturedProductDetailed from "./components/FeaturedProductDetailed";
-import FeaturedProductNoDetail from "./components/FeaturedProductNoDetail";
 import AudiophileCopySection from "./components/AudiophileCopySection";
 import Footer from "./components/Footer";
+import FeaturedProducts from "./components/FeaturedProducts";
 
 const Home = () => {
   return (
@@ -17,9 +16,7 @@ const Home = () => {
       </header>
       <main>
         <ShopProductsLinks />
-        <FeaturedProductDetailed />
-        <FeaturedProductNoDetail productName="ZX7 Speaker" />
-        <FeaturedProductNoDetail productName="YX1 Earphones" />
+        <FeaturedProducts />
         <AudiophileCopySection />
       </main>
       <Footer />

@@ -1,5 +1,5 @@
 /* IMPORT FONTS */
-@import url("https://fonts.googleapis.com/css?family=Manrope:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Manrope:300,400,500,700&display=swap");
 
 /* RESET STYLES */
 
@@ -241,10 +241,9 @@ main {
   padding: 24px;
   display: flex;
   flex-direction: column;
-
 }
 
-.shop-products-links-container > button {
+.shop-products-links > button {
   width: 100%;
   background: linear-gradient(0deg, #f1f1f1 80%, #fafafa 0%);
   color: black;
@@ -267,7 +266,7 @@ main {
 }
 
 .speaker-preview {
-  margin-top: -28px;  
+  margin-top: -28px;
 }
 
 .earphone-preview {
@@ -276,15 +275,201 @@ main {
   margin-bottom: 0px;
 }
 
-.shop-products-links-container > button > h3 {
+.shop-products-links > button > h3 {
   letter-spacing: 1.07px;
-  ;
 }
 
-.shop-products-links-container > button > p {
+.shop-products-links > button > p {
   opacity: 0.5;
   font-size: 13px;
   letter-spacing: 1px;
   margin-bottom: 24px;
 }
 
+/* FEATURED PRODUCTS */
+
+.featured-product {
+  height: 600px;
+  background-color: #d87d4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.featured-product:first-of-type > img {
+  object-fit: contain;
+  height: 207px;
+  margin-top: 55px;
+  margin-bottom: 32px;
+}
+
+.featured-product:first-of-type > h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 1.29px;
+  line-height: 40px;
+  text-align: center;
+  padding: 0 64px;
+  margin-bottom: 24px;
+}
+
+.featured-product:first-of-type > p {
+  color: #fff;
+  line-height: 25px;
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: 300;
+  padding: 0 16px;
+}
+
+.featured-product:first-of-type > button {
+  color: #fff;
+  background-color: #000;
+  min-width: 160px;
+  max-width: 50%;
+  height: 48px;
+  text-align: center;
+  margin-bottom: 28px;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+.featured-product:nth-of-type(2) {
+  background: url(./assets/home/mobile/image-speaker-zx7.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 320px;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 24px;
+}
+
+.featured-product:nth-of-type(2) > button {
+  margin-bottom: 32px;
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 1px #000;
+  color: #000;
+}
+
+.featured-product:nth-of-type(2) > h2 {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+
+.featured-product:nth-of-type(3)  {
+  background-color: #fff;
+  height: 416px;
+}
+
+.featured-product:nth-of-type(3) > img {
+  margin-bottom: 24px;
+}
+
+.featured-product:nth-of-type(3) > div {
+  background: #f1f1f1;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 200px;
+  justify-content: center;
+  padding: 24px;
+}
+
+.featured-product:nth-of-type(3) > div > h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 32px;
+
+}
+
+.featured-product:nth-of-type(3) > div > button {
+  background-color: rgba(255, 255, 255, 0);
+  color: black;
+  border: 1px solid black;
+}
+
+
+.audiophile-copy-section-container > img {
+  margin-bottom: 40px;
+}
+
+.copy-section-copy-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.copy-section-copy-container > h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0 32px;
+  margin-bottom: 32px;
+  
+}
+
+.copy-section-copy-container > h2 > span {
+  color: #d87d4a;
+}
+
+.copy-section-copy-container > p {
+  text-align: center;
+  padding: 0 8px;
+
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-bottom: 48px;
+}
+
+.social-links-container {
+  display: flex;
+}
+
+.footer-line-2 > p, .footer-line-3 {
+color: #878787
+}
+
+.footer-menu {
+  list-style-type: none;
+  letter-spacing: 2px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 48px;
+}
+
+.footer-line-2 {
+  text-align: center;
+  padding: 2px;
+  margin-bottom: 48px;
+}
+
+.footer-line-3 {
+  text-align: center;
+  margin-bottom: 48px;
+}
