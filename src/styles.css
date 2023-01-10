@@ -56,11 +56,11 @@ h6 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background: black;
+
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
   height: 50px;
-  padding: 32px 24px 32px 12px;
+  padding: 32px 24px 48px 12px;
 }
 
 .menu {
@@ -172,7 +172,6 @@ body {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
   font-size: 15px;
-  background: #fafafa;
 }
 
 button {
@@ -187,22 +186,23 @@ button {
 /* HEADER */
 
 hr {
-  border-color: #979797;
+  border-color: #2d2d2d;
 }
 
 header {
   background-color: black;
   color: white;
+  background: url(./assets/home/mobile/image-header.jpg);
+  background-size: 104%;
+  background-position-y: 104%;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(./assets/home/mobile/image-header.jpg);
-  background-size: 104%;
-  background-position-y: 104%;
-  margin-bottom: 32px;
+
+  margin-bottom: 48px;
 }
 
 .hero > button {
@@ -243,48 +243,84 @@ main {
   flex-direction: column;
 }
 
+.shop-products-links {
+  margin-bottom: 120px;
+}
+
 .shop-products-links > button {
   width: 100%;
-  background: linear-gradient(0deg, #f1f1f1 80%, #fafafa 0%);
+  background: #fff;
   color: black;
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  align-items: center;
   margin-bottom: 26px;
+  padding: 0;
+}
+
+.shop-products-links > button:nth-of-type(2) > .button-content > h3 {
+  margin-top: -6px;
+}
+
+button > .spacer {
+  height: 52px;
+}
+
+.button-content {
+  height: 165px;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.shop-product-image-container {
+  display: flex;
+  justify-content: center;
 }
 
 .preview-image {
   width: 33%;
   height: auto;
-  margin-bottom: 14px;
-  filter: drop-shadow(0px 10vw 5vw grey);
+  margin-bottom: 48px;
+  filter: drop-shadow(0px 13vw 5vw #b5b5b5);
 }
 
 .headphone-preview {
-  margin-top: -42px;
+  margin-top: -86px;
 }
 
 .speaker-preview {
-  margin-top: -28px;
+  margin-top: -68px;
 }
 
 .earphone-preview {
-  margin-top: -48px;
-  width: 60%;
-  margin-bottom: 0px;
+  margin-top: -86px;
+  width: 54%;
+  margin-bottom: 32px;
 }
 
-.shop-products-links > button > h3 {
+.shop-product-title {
   letter-spacing: 1.07px;
 }
 
-.shop-products-links > button > p {
+.shop-product-p {
   opacity: 0.5;
   font-size: 13px;
   letter-spacing: 1px;
   margin-bottom: 24px;
 }
+
+.p-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.arrow {
+  color: #d87d4a;
+  font-size: 14px;
+}
+
 
 /* FEATURED PRODUCTS */
 
@@ -295,6 +331,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 24px;
+  border-radius: 8px;
 }
 
 .featured-product:first-of-type > img {
@@ -361,15 +398,18 @@ main {
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 28px;
+
 }
 
 .featured-product:nth-of-type(3)  {
   background-color: #fff;
   height: 416px;
+  border-radius: 8px;
 }
 
 .featured-product:nth-of-type(3) > img {
   margin-bottom: 24px;
+  border-radius: 8px;
 }
 
 .featured-product:nth-of-type(3) > div {
@@ -382,6 +422,7 @@ main {
   height: 200px;
   justify-content: center;
   padding: 24px;
+  border-radius: 8px;
 }
 
 .featured-product:nth-of-type(3) > div > h2 {
@@ -400,6 +441,7 @@ main {
 
 .audiophile-copy-section-container > img {
   margin-bottom: 40px;
+  border-radius: 8px;
 }
 
 .copy-section-copy-container {
@@ -432,18 +474,27 @@ main {
 footer {
   background-color: #000;
   color: #fff;
-  padding: 24px;
+  padding: 0 24px 24px 24px;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: center;
 }
 
+footer > hr {
+  height: 4px;
+  width: 101px;
+  background-color: #d87d4a;
+  margin-bottom: 48px;
+  border: 1px solid #d87d4a;
+}
 .footer-logo {
   margin-bottom: 48px;
 }
 
 .social-links-container {
   display: flex;
+  gap: 16px;
 }
 
 .footer-line-2 > p, .footer-line-3 {

@@ -6,6 +6,7 @@ import Logo from "../assets/shared/desktop/logo.svg";
 const Footer = () => {
   return (
     <footer>
+      <hr />
       <img src={Logo} className="footer-logo" />
       <div className="footer-line-1">
         <img />

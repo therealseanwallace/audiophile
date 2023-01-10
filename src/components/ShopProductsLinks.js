@@ -7,19 +7,52 @@ const ShopProductsLinks = () => {
   return (
     <section className="shop-products-links">
       <button>
-        <img src={HeadphonePreview} className="headphone-preview preview-image"/>
-        <h3>Headphones</h3>
-        <p>Shop</p>
+        <div className="spacer"></div>
+        <div className="button-content">
+          <div className="shop-product-image-container">
+            <img
+              src={HeadphonePreview}
+              className="headphone-preview preview-image"
+            />
+          </div>
+          <h3 className="shop-product-title">Headphones</h3>
+          <div className="p-container">
+            <p className="shop-product-p">Shop</p>
+            <p className="arrow"> > </p>
+          </div>
+        </div>
       </button>
       <button>
-      <img src={SpeakerPreview} className="speaker-preview preview-image"/>
-        <h3>Speakers</h3>
-        <p>Shop</p>
+        <div className="spacer"></div>
+        <div className="button-content">
+          <div className="shop-product-image-container">
+            <img
+              src={SpeakerPreview}
+              className="speaker-preview preview-image"
+            />
+          </div>
+          <h3 className="shop-product-title">Speakers</h3>
+          <div className="p-container">
+            <p className="shop-product-p">Shop</p>
+            <p className="arrow"> > </p>
+          </div>
+        </div>
       </button>
       <button>
-        <img src={EarphonePreview} className="earphone-preview preview-image"/>
-        <h3>Earphones</h3>
-        <p>Shop</p>
+        <div className="spacer"></div>
+        <div className="button-content">
+          <div className="shop-product-image-container">
+            <img
+              src={EarphonePreview}
+              className="earphone-preview preview-image"
+            />
+          </div>
+          <h3 className="shop-product-title">Earphones</h3>
+          <div className="p-container">
+            <p className="shop-product-p">Shop</p>
+            <p className="arrow"> > </p>
+          </div>
+        </div>
       </button>
     </section>
   );
