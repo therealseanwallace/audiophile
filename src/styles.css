@@ -59,7 +59,7 @@ h6 {
 
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
-  height: 50px;
+  height: 8vw;
   padding: 32px 24px 48px 12px;
 }
 
@@ -125,7 +125,7 @@ h6 {
   transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .menu-button-container {
     display: flex;
   }
@@ -193,46 +193,45 @@ header {
   background-color: black;
   color: white;
   background: url(./assets/home/mobile/image-header.jpg);
-  background-size: 104%;
-  background-position-y: 104%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -20px;
+  height: 162vw;
+
+  margin-bottom: 8vw;
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  margin-bottom: 48px;
-}
-
-.hero > button {
-  margin-bottom: 112px;
+  padding-left: 16vw;
+  padding-right: 16vw;
 }
 
 .hero > h3 {
   text-transform: uppercase;
   color: #979797;
-  font-size: 14px;
+  font-size: 0.875rem;
   letter-spacing: 10px;
-  margin-top: 108px;
+  margin-top: calc(25vw + 25px);
   margin-bottom: 16px;
 }
 
 .hero > h2 {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 2.5rem;
   letter-spacing: 1.29px;
   line-height: 40px;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 3vw;
 }
 
 .hero > p {
   color: #f1f1f1;
-  line-height: 25px;
+  line-height: 1.563rem;
   text-align: center;
-  padding: 0 24px;
-  margin-bottom: 28px;
+  margin-bottom: 7.5vw;
 }
 
 /*** MAIN ***/
@@ -241,20 +240,23 @@ main {
   padding: 24px;
   display: flex;
   flex-direction: column;
+
 }
 
 .shop-products-links {
   margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
 }
 
-.shop-products-links > button {
-  width: 100%;
+.shop-product-link {
   background: #fff;
   color: black;
   display: flex;
   flex-direction: column;
-  margin-bottom: 26px;
+  margin-bottom: 8vw;
   padding: 0;
+  align-items: stretch;
 }
 
 .shop-products-links > button:nth-of-type(2) > .button-content > h3 {
@@ -262,7 +264,7 @@ main {
 }
 
 button > .spacer {
-  height: 52px;
+  height: 16vw;
 }
 
 .button-content {
@@ -280,28 +282,30 @@ button > .spacer {
 }
 
 .preview-image {
-  width: 33%;
+  width: 80px;
   height: auto;
   margin-bottom: 48px;
-  filter: drop-shadow(0px 13vw 5vw #b5b5b5);
+  filter: drop-shadow(0px 5vw 2vw #b5b5b5);
 }
 
 .headphone-preview {
-  margin-top: -86px;
+  margin-top: -82px;
 }
 
 .speaker-preview {
   margin-top: -68px;
+  width: 84px;
 }
 
 .earphone-preview {
-  margin-top: -86px;
-  width: 54%;
-  margin-bottom: 32px;
+  margin-top: -48px;
+  width: 124px;
+  margin-bottom: 14px;
 }
 
 .shop-product-title {
   letter-spacing: 1.07px;
+  margin-bottom: 14px;
 }
 
 .shop-product-p {
@@ -321,11 +325,17 @@ button > .spacer {
   font-size: 14px;
 }
 
-
 /* FEATURED PRODUCTS */
 
+.featured-products {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin-bottom: 64px;
+}
+
 .featured-product {
-  height: 600px;
+  height: 720px;
   background-color: #d87d4a;
   display: flex;
   flex-direction: column;
@@ -348,7 +358,7 @@ button > .spacer {
   letter-spacing: 1.29px;
   line-height: 40px;
   text-align: center;
-  padding: 0 64px;
+  padding: 0 20vw;
   margin-bottom: 24px;
 }
 
@@ -356,19 +366,16 @@ button > .spacer {
   color: #fff;
   line-height: 25px;
   text-align: center;
-  margin-bottom: 28px;
+  margin-bottom: 40px;
   font-weight: 300;
-  padding: 0 16px;
+  padding: 0 9vw;
 }
 
 .featured-product:first-of-type > button {
   color: #fff;
   background-color: #000;
   min-width: 160px;
-  max-width: 50%;
   height: 48px;
-  text-align: center;
-  margin-bottom: 28px;
   font-weight: bold;
   font-size: 13px;
   letter-spacing: 1px;
@@ -377,12 +384,12 @@ button > .spacer {
 
 .featured-product:nth-of-type(2) {
   background: url(./assets/home/mobile/image-speaker-zx7.jpg);
-  background-size: 100%;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 320px;
   align-items: flex-start;
   justify-content: center;
   padding-left: 24px;
+  height: 89vw;
 }
 
 .featured-product:nth-of-type(2) > button {
@@ -398,17 +405,19 @@ button > .spacer {
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 28px;
-
 }
 
-.featured-product:nth-of-type(3)  {
+.featured-product:nth-of-type(3) {
   background-color: #fff;
-  height: 416px;
+  height: 113vw;
   border-radius: 8px;
 }
 
-.featured-product:nth-of-type(3) > img {
-  margin-bottom: 24px;
+.featured-product:nth-of-type(3) > .image-container {
+  background: url(./assets/home/mobile/image-earphones-yx1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 224px;
   border-radius: 8px;
 }
 
@@ -419,7 +428,7 @@ button > .spacer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  height: 200px;
+
   justify-content: center;
   padding: 24px;
   border-radius: 8px;
@@ -429,7 +438,6 @@ button > .spacer {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 32px;
-
 }
 
 .featured-product:nth-of-type(3) > div > button {
@@ -438,6 +446,9 @@ button > .spacer {
   border: 1px solid black;
 }
 
+.audiophile-copy-section-container {
+  margin-bottom: 100px;
+}
 
 .audiophile-copy-section-container > img {
   margin-bottom: 40px;
@@ -447,7 +458,6 @@ button > .spacer {
 .copy-section-copy-container {
   display: flex;
   flex-direction: column;
-
 }
 
 .copy-section-copy-container > h2 {
@@ -455,7 +465,6 @@ button > .spacer {
   text-align: center;
   padding: 0 32px;
   margin-bottom: 32px;
-  
 }
 
 .copy-section-copy-container > h2 > span {
@@ -465,9 +474,7 @@ button > .spacer {
 .copy-section-copy-container > p {
   text-align: center;
   padding: 0 8px;
-
 }
-
 
 /* FOOTER */
 
@@ -497,8 +504,9 @@ footer > hr {
   gap: 16px;
 }
 
-.footer-line-2 > p, .footer-line-3 {
-color: #878787
+.footer-line-2 > p,
+.footer-line-3 {
+  color: #878787;
 }
 
 .footer-menu {
@@ -523,4 +531,146 @@ color: #878787
 .footer-line-3 {
   text-align: center;
   margin-bottom: 48px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+  header {
+    background: url("./assets/home/tablet/image-header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 93vw;
+    margin-bottom: 4vw;
+  }
+
+  .top-nav > img:first-of-type {
+    margin-right: auto;
+    margin-left: 42px;
+  }
+
+  .hero > h2 {
+    font-size: 3.5rem;
+    letter-spacing: 0.125rem;
+    line-height: 3.625rem;
+  }
+
+  .hero > h3 {
+    text-transform: uppercase;
+    color: #979797;
+    font-size: 0.875rem;
+    letter-spacing: 10px;
+    margin-top: calc(13vw + 25px);
+    margin-bottom: 16px;
+  }
+
+  .hero > p {
+    font-size: 0.938rem;
+    padding: 0 10vw;
+    margin-bottom: 4.4vw;
+  }
+
+  .shop-products-links {
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 36px;
+  }
+
+  .shop-product-link {
+    flex: 0 0 33%;
+  }
+
+  .headphone-preview {
+    margin-top: -70px;
+    margin-bottom: 34px;
+  }
+
+  .speaker-preview {
+    margin-top: -76px;
+  }
+
+  .earphone-preview {
+    margin-top: -91px;
+    width: 150px;
+    margin-bottom: 22px;
+  }
+
+  .featured-products {
+    margin-bottom: 96px;
+  }
+
+  .featured-product:first-of-type > img {
+    margin-top: 52px;
+    margin-bottom: 64px;
+  }
+
+  .featured-product:first-of-type > h2 {
+    padding: 0 38vw;
+    font-size: 56px;
+    letter-spacing: 2px;
+    line-height: 58px;
+  }
+
+  .featured-product:first-of-type > p {
+    padding: 0 24vw;
+  }
+
+  .featured-product:nth-of-type(2) {
+    background: url(./assets/home/tablet/image-speaker-zx7.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 44vw;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 62px;
+  }
+
+  .featured-product:nth-of-type(3) {
+    background-color: #fff;
+    height: 113vw;
+    border-radius: 8px;
+  }
+
+  .featured-product:nth-of-type(3)  {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+    align-items: stretch;
+    height: 320px;
+  }
+
+  .featured-product:nth-of-type(3) > .image-container {
+    background: url(./assets/home/tablet/image-earphones-yx1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0;
+  }
+  
+  .featured-product:nth-of-type(3) > .featured-product-detail {
+    height: auto;
+    padding-left: 52px;
+  }
+
+  .audiophile-copy-section-container > img {
+    width: 100%;
+  }
+
+  footer {
+    align-items: flex-start;
+  }
+
+  .footer-menu {
+    flex-direction: row;
+    gap: 34px;
+  }
+
+  .footer-line-2 > p, .footer-line-3 > p {
+    text-align: left;
+  }
+
+  footer > hr {
+    margin-left: 5px;
+  }
 }

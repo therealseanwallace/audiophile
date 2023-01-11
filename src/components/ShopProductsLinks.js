@@ -6,7 +6,7 @@ import EarphonePreview from "../assets/earphone-preview.png";
 const ShopProductsLinks = () => {
   return (
     <section className="shop-products-links">
-      <button>
+      <button className="shop-product-link">
         <div className="spacer"></div>
         <div className="button-content">
           <div className="shop-product-image-container">
@@ -22,7 +22,7 @@ const ShopProductsLinks = () => {
           </div>
         </div>
       </button>
-      <button>
+      <button className="shop-product-link">
         <div className="spacer"></div>
         <div className="button-content">
           <div className="shop-product-image-container">
@@ -38,7 +38,7 @@ const ShopProductsLinks = () => {
           </div>
         </div>
       </button>
-      <button>
+      <button className="shop-product-link">
         <div className="spacer"></div>
         <div className="button-content">
           <div className="shop-product-image-container">

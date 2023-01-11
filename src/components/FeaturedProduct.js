@@ -33,8 +33,8 @@ const FeaturedProduct = (props) => {
   image = YX1;
   return (
     <section className="featured-product">
-      <img src={image} />
-      <div>
+      <div className="image-container" />
+      <div className="featured-product-detail">
         <h2>{props.productName}</h2>
         <button>See product</button>
       </div>
