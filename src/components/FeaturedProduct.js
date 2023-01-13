@@ -13,18 +13,22 @@ const FeaturedProduct = (props) => {
           <div className="circle-two circle"></div>
           <div className="circle-three circle"></div>
           <img src={image} />
-          <h2>{props.productName}</h2>
-          <p>{props.desc}</p>
-          <button>See product</button>
+          <div className="featured-product-detail">
+            <h2>{props.productName}</h2>
+            <p>{props.desc}</p>
+            <button>See product</button>
+          </div>
         </section>
       );
     case "ZX7 Speaker":
       return (
         <section className="featured-product">
           <img src={image} />
+          <div className="featured-product-detail">
           <h2>{props.productName}</h2>
           <p>{props.desc}</p>
           <button>See product</button>
+          </div>
         </section>
       );
     default:

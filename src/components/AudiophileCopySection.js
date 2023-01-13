@@ -4,7 +4,8 @@ import BestGear from "../assets/shared/desktop/image-best-gear.jpg";
 const AudiophileCopySection = () => {
   return (
     <section className="audiophile-copy-section-container">
-      <img src={BestGear} alt="A young man listening to headphones."/>
+      <div className="audiophile-copy-section-image-container">
+      </div>
       <div className="copy-section-copy-container">
         <h2>
           Bringing you the <span>best</span> audio gear
@@ -18,7 +19,6 @@ const AudiophileCopySection = () => {
           best place to buy your portable audio equipment.
         </p>
       </div>
-      
     </section>
   );
 };

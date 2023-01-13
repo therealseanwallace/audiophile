@@ -171,7 +171,7 @@ h6 {
 body {
   font-family: "Manrope", sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.938rem;
 }
 
 button {
@@ -213,7 +213,7 @@ header {
   text-transform: uppercase;
   color: #979797;
   font-size: 0.875rem;
-  letter-spacing: 10px;
+  letter-spacing: 0.625rem;
   margin-top: calc(25vw + 25px);
   margin-bottom: 16px;
 }
@@ -221,7 +221,7 @@ header {
 .hero > h2 {
   text-transform: uppercase;
   font-size: 2.5rem;
-  letter-spacing: 1.29px;
+  letter-spacing: 0.081rem;
   line-height: 40px;
   text-align: center;
   margin-bottom: 3vw;
@@ -240,7 +240,6 @@ main {
   padding: 24px;
   display: flex;
   flex-direction: column;
-
 }
 
 .shop-products-links {
@@ -304,14 +303,14 @@ button > .spacer {
 }
 
 .shop-product-title {
-  letter-spacing: 1.07px;
+  letter-spacing: 0.067px;
   margin-bottom: 14px;
 }
 
 .shop-product-p {
   opacity: 0.5;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 0.813;
+  letter-spacing: 0.063;
   margin-bottom: 24px;
 }
 
@@ -322,7 +321,7 @@ button > .spacer {
 
 .arrow {
   color: #d87d4a;
-  font-size: 14px;
+  font-size: 0.875;
 }
 
 /* FEATURED PRODUCTS */
@@ -351,18 +350,24 @@ button > .spacer {
   margin-bottom: 32px;
 }
 
-.featured-product:first-of-type > h2 {
+.featured-product:first-of-type > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.featured-product:first-of-type > div > h2 {
   color: #fff;
   text-transform: uppercase;
-  font-size: 36px;
-  letter-spacing: 1.29px;
+  font-size: 2.25rem;
+  letter-spacing: 0.081;
   line-height: 40px;
   text-align: center;
   padding: 0 20vw;
   margin-bottom: 24px;
 }
 
-.featured-product:first-of-type > p {
+.featured-product:first-of-type > div > p {
   color: #fff;
   line-height: 25px;
   text-align: center;
@@ -371,14 +376,14 @@ button > .spacer {
   padding: 0 9vw;
 }
 
-.featured-product:first-of-type > button {
+.featured-product:first-of-type > div > button {
   color: #fff;
   background-color: #000;
   min-width: 160px;
   height: 48px;
   font-weight: bold;
-  font-size: 13px;
-  letter-spacing: 1px;
+  font-size: 0.813rem;
+  letter-spacing: 0.063;
   padding: 0;
 }
 
@@ -392,24 +397,24 @@ button > .spacer {
   height: 89vw;
 }
 
-.featured-product:nth-of-type(2) > button {
+.featured-product:nth-of-type(2) > div > button {
   margin-bottom: 32px;
   background-color: rgba(255, 255, 255, 0);
   border: solid 1px #000;
   color: #000;
 }
 
-.featured-product:nth-of-type(2) > h2 {
+.featured-product:nth-of-type(2) > div > h2 {
   margin-bottom: 32px;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 2px;
-  font-size: 28px;
+  letter-spacing: 0.125rem;
+  font-size: 1.75rem;
 }
 
 .featured-product:nth-of-type(3) {
   background-color: #fff;
-  height: 113vw;
+  height: 90vw;
   border-radius: 8px;
 }
 
@@ -436,7 +441,7 @@ button > .spacer {
 
 .featured-product:nth-of-type(3) > div > h2 {
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.125;
   margin-bottom: 32px;
 }
 
@@ -448,16 +453,29 @@ button > .spacer {
 
 .audiophile-copy-section-container {
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+
 }
 
-.audiophile-copy-section-container > img {
-  margin-bottom: 40px;
+.audiophile-copy-section-image-container {
+  margin-bottom: 56px;
   border-radius: 8px;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  height: 88vw;
+  background: url(./assets/shared/mobile/image-best-gear.jpg);
 }
 
 .copy-section-copy-container {
   display: flex;
   flex-direction: column;
+  
+}
+
+.copy-section-copy-container > p {
+  color:#2d2d2d
 }
 
 .copy-section-copy-container > h2 {
@@ -511,7 +529,7 @@ footer > hr {
 
 .footer-menu {
   list-style-type: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.125;
   font-weight: bold;
   display: flex;
   flex-direction: column;
@@ -559,7 +577,7 @@ footer > hr {
     text-transform: uppercase;
     color: #979797;
     font-size: 0.875rem;
-    letter-spacing: 10px;
+    letter-spacing: 0.625;
     margin-top: calc(13vw + 25px);
     margin-bottom: 16px;
   }
@@ -599,19 +617,19 @@ footer > hr {
     margin-bottom: 96px;
   }
 
-  .featured-product:first-of-type > img {
+  .featured-product:first-of-type > div > img {
     margin-top: 52px;
     margin-bottom: 64px;
   }
 
-  .featured-product:first-of-type > h2 {
+  .featured-product:first-of-type > div > h2 {
     padding: 0 38vw;
     font-size: 56px;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
     line-height: 58px;
   }
 
-  .featured-product:first-of-type > p {
+  .featured-product:first-of-type > div > p {
     padding: 0 24vw;
   }
 
@@ -632,7 +650,7 @@ footer > hr {
     border-radius: 8px;
   }
 
-  .featured-product:nth-of-type(3)  {
+  .featured-product:nth-of-type(3) {
     display: flex;
     flex-direction: row;
     gap: 11px;
@@ -647,14 +665,21 @@ footer > hr {
     height: auto;
     margin: 0;
   }
-  
+
   .featured-product:nth-of-type(3) > .featured-product-detail {
     height: auto;
     padding-left: 52px;
   }
 
-  .audiophile-copy-section-container > img {
-    width: 100%;
+  .audiophile-copy-section-image-container {
+    background: url(./assets/shared/tablet/image-best-gear.jpg);
+    height: 41vw;
+
+  }
+
+  .copy-section-copy-container > h2 {
+    font-size: 2.75rem;
+    letter-spacing: 0.089rem;
   }
 
   footer {
@@ -666,11 +691,202 @@ footer > hr {
     gap: 34px;
   }
 
-  .footer-line-2 > p, .footer-line-3 > p {
+  .footer-line-2 > p,
+  .footer-line-3 > p {
     text-align: left;
   }
 
   footer > hr {
     margin-left: 5px;
   }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    background: url("./assets/home/desktop/image-hero.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 58vw;
+  }
+
+  header > .hero > h3,
+  header > .hero > h2,
+  header > .hero > p {
+    text-align: left;
+    padding: 0;
+  }
+
+  .hero {
+    align-items: flex-start;
+    margin-top: 2vw;
+  }
+
+  .hero > h3 {
+    margin-top: calc(5vw + 25px);
+  }
+
+  header > .hero > h2 {
+    margin-bottom: 2vw;
+    padding-right: 60vw;
+  }
+
+  header > .hero > p {
+    padding-right: 40vw;
+    margin-bottom: 40px;
+  }
+
+  button > .spacer {
+    height: 0;
+  }
+
+  main {
+    padding: 0px 165px 0px 165px;
+  }
+
+  .preview-image {
+    filter: drop-shadow(0px 2vw 1vw #b5b5b5);
+  }
+
+  .shop-products-links {
+    margin-bottom: 52px;
+  }
+
+  .featured-product:first-of-type {
+    flex-direction: row;
+    height: 560px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .featured-product:first-of-type > img {
+    height: 442px;
+    margin-top: 177px;
+    margin-left: 11vw;
+  }
+
+  .featured-product:first-of-type > div {
+    align-items: flex-start;
+  }
+
+  .featured-product:first-of-type > div > h2,
+  .featured-product:first-of-type > div > p {
+    padding: 0 9vw;
+    text-align: left;
+  }
+
+  .featured-product:first-of-type > div > button {
+    margin-left: 9.1vw;
+  }
+
+  .featured-product:first-of-type > *,
+  .featured-product:first-of-type > * > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .featured-product:nth-of-type(2) {
+    background: url(./assets/home/desktop/image-speaker-zx7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 7vw;
+  }
+
+  .featured-product:nth-of-type(3) > .image-container {
+    background: url(./assets/home/desktop/image-earphones-yx1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 320px;
+    margin: 0;
+    border-radius: 8px;
+  }
+
+  .featured-product-detail:nth-of-type(3) {
+    padding: 0;
+  }
+
+  .featured-product:nth-of-type(3) > div > h2,
+  .featured-product:nth-of-type(3) > div > button {
+    margin-left: 20px;
+  }
+
+  .audiophile-copy-section-container {
+    flex-direction: row-reverse;
+    height: 600px;
+    width: 100%;
+  }
+
+  .copy-section-copy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-right: 7vw;
+    width: 50%;
+  }
+
+  .audiophile-copy-section-container > .copy-section-copy-container > * {
+    text-align: left;
+    padding: 0;
+  }
+
+  .audiophile-copy-section-container > .copy-section-copy-container > h2 {
+    font-size: 2.5rem;
+    letter-spacing: 0.089rem;
+  }
+
+  .audiophile-copy-section-image-container {
+    width: 50%;
+    height: 588px;
+    background: url(./assets/shared/desktop/image-best-gear.jpg);
+  }
+
+  footer {
+    padding: 75px 140px 0px 140px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .footer-menu {
+    justify-content: flex-end;
+  }
+
+  footer > hr {
+    margin-top: -98px;
+    order: 1;
+  }
+
+  .footer-logo {
+    margin-right: 0;
+  }
+
+  .footer-line-1 {
+    order: 3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-line-2 {
+    order: 4;
+    width: 50%;
+  }
+
+  .footer-line-3 {
+    order: 6;
+  }
+
+  .social-links-container {
+    order: 5;
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+
+
+
 }

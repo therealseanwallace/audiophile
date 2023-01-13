@@ -7,9 +7,10 @@ const Footer = () => {
   return (
     <footer>
       <hr />
-      <img src={Logo} className="footer-logo" />
+
       <div className="footer-line-1">
-        <img />
+        <img src={Logo} className="footer-logo" />
+
         <MenuFooter class="footer-menu" />
       </div>
       <div className="footer-line-2">
@@ -19,12 +20,12 @@ const Footer = () => {
           helping you get the most out of personal audio. Come and visit our
           demo facility - we’re open 7 days a week.
         </p>
-        
       </div>
       <div className="footer-line-3">
-      <p>Copyright 2021. All Rights Reserved.</p><br />
-      <p>Designed by Front End Mentor</p>
-      <p>Built by Sean Wallace</p>
+        <p>Copyright 2021. All Rights Reserved.</p>
+        <br />
+        <p>Designed by Front End Mentor</p>
+        <p>Built by Sean Wallace</p>
       </div>
       <SocialLinks />
     </footer>
